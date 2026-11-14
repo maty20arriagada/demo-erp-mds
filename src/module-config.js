@@ -25,7 +25,7 @@ export const userConfig = {
     { target: 'entity', key: 'sku', label: 'SKU', type: 'text', required: true },
     { target: 'entity', key: 'stockMinimo', label: 'Stock mínimo', type: 'number' },
     { target: 'document', key: 'tipo', label: 'Tipo de movimiento', type: 'select', options: ['Entrada', 'Salida', 'Ajuste'] },
-    { target: 'document', key: 'bodega', label: 'Bodega', type: 'select', options: ['Central', 'Sucursal Norte'] }
+    { target: 'document', key: 'bodega', label: 'Bodega', type: 'select', options: ['Central', 'Norte', 'Sur'] }
   ],
   theme: { accentColor: '#0f766e' }
 };
