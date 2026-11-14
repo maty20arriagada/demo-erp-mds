@@ -18,7 +18,17 @@
 //   },
 //   theme: { accentColor: '#0f62fe' }
 // }
-export const userConfig = null;
+export const userConfig = {
+  moduleName: 'Inventario',
+  labels: { entity: 'Producto', entities: 'Productos', document: 'Movimiento', documents: 'Movimientos' },
+  customFields: [
+    { target: 'entity', key: 'sku', label: 'SKU', type: 'text', required: true },
+    { target: 'entity', key: 'stockMinimo', label: 'Stock mínimo', type: 'number' },
+    { target: 'document', key: 'tipo', label: 'Tipo de movimiento', type: 'select', options: ['Entrada', 'Salida', 'Ajuste'] },
+    { target: 'document', key: 'bodega', label: 'Bodega', type: 'select', options: ['Central', 'Sucursal Norte'] }
+  ],
+  theme: { accentColor: '#0f766e' }
+};
 
 // ---------------------------------------------------------------------------
 // Cargador central — no deberías necesitar modificar nada debajo de esta línea.
