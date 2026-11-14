@@ -19,12 +19,15 @@
 //   theme: { accentColor: '#0f62fe' }
 // }
 export const userConfig = {
-  moduleName: 'Inventario Pyme',
-  labels: { entity: 'Artículo', entities: 'Artículos', document: 'Movimiento', documents: 'Movimientos' },
+  moduleName: 'Inventario',
+  labels: { entity: 'Producto', entities: 'Productos', document: 'Movimiento', documents: 'Movimientos' },
   customFields: [
+    { target: 'entity', key: 'sku', label: 'SKU', type: 'text', required: true },
+    { target: 'entity', key: 'stockMinimo', label: 'Stock mínimo', type: 'number' },
+    { target: 'document', key: 'tipo', label: 'Tipo de movimiento', type: 'select', options: ['Entrada', 'Salida', 'Ajuste'] },
     { target: 'document', key: 'bodega', label: 'Bodega', type: 'select', options: ['Central', 'Norte', 'Sur'] }
   ],
-  theme: { accentColor: '#7c3aed' }
+  theme: { accentColor: '#0f766e' }
 };
 
 // ---------------------------------------------------------------------------
