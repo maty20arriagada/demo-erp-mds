@@ -18,7 +18,14 @@
 //   },
 //   theme: { accentColor: '#0f62fe' }
 // }
-export const userConfig = null;
+export const userConfig = {
+  moduleName: 'Inventario Pyme',
+  labels: { entity: 'Artículo', entities: 'Artículos', document: 'Movimiento', documents: 'Movimientos' },
+  customFields: [
+    { target: 'document', key: 'bodega', label: 'Bodega', type: 'select', options: ['Central', 'Norte', 'Sur'] }
+  ],
+  theme: { accentColor: '#7c3aed' }
+};
 
 // ---------------------------------------------------------------------------
 // Cargador central — no deberías necesitar modificar nada debajo de esta línea.
